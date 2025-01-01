@@ -321,17 +321,23 @@ initVars();
 frame();
 
 window.onload = function(){
-             setInterval("toggleSound()",100);
-        }
+	setInterval("toggleSound()",100);
+	var info = navigator.userAgent;
+        
+        var isPhone = /mobile/i.test(info);
+	if(isPhone){
+		window.alert("手机打开适配有点问题,不过也无妨,记得最后有彩蛋");
+	}
+}
 
-    function toggleSound() {
-                var music = document.getElementById("vd");//获取ID  
+function toggleSound() {
+    var music = document.getElementById("vd");//获取ID  
                     
-                if (music.paused) { //判读是否播放  
-                    music.paused=false;
-                    music.play(); //没有就播放 
-                }    
-        }
+    if (music.paused) { //判读是否播放  
+        music.paused=false;
+        music.play(); //没有就播放 
+    }    
+}
 
 var clinum=0;
 document.addEventListener('click', function(event) {
