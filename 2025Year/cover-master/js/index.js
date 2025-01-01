@@ -16,7 +16,7 @@ var S = {
     if (i !== -1) {
       S.UI.simulate(decodeURI(action).substring(i + 3));
     } else {
-      S.UI.simulate('|#countdown 3||新|年|快|乐|点击屏幕才有音乐噢|诸君|去岁千般皆如|愿今年万事定称心|祝你|新的一年| 顺风顺水|扶摇直上|万事胜意|前程似锦|2025| HAPPY NEW YEAR | 轻点屏幕有惊喜');
+      S.UI.simulate('|#countdown 3||新|年|快|乐|点击屏幕才有音乐噢|诸君|去岁千般皆如|愿今年万事定称心|祝你|新的一年| 顺风顺水|扶摇直上|万事胜意|前程似锦|2025| HAPPY NEW YEAR ');
     }
 
     // 开始绘图循环
